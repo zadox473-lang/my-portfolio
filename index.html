@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #05080a;
+            background-image: linear-gradient(rgba(0, 255, 128, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 255, 128, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 20px;
+        }
+        .neon-border {
+            border: 1px solid #8b5cf6;
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <div class="flex flex-col items-center mb-10">
+        <div class="w-24 h-24 rounded-full border-4 border-purple-500 p-1 mb-4 shadow-[0_0_20px_rgba(139,92,246,0.8)]">
+            <img src="https://via.placeholder.com/150" class="rounded-full w-full h-full object-cover" alt="Profile">
+        </div>
+        <h1 class="text-4xl font-bold tracking-tighter text-cyan-400">YOUR NAME</h1>
+        <div class="bg-black/50 px-4 py-1 rounded-full border border-pink-500/50 text-xs mt-2 italic text-pink-400">
+            ⚡ Class 10th • Sigma Developer
+        </div>
+    </div>
+
+    <h2 class="text-center text-xl font-bold tracking-[0.2em] text-gray-400 mb-6">SERVICES</h2>
+    
+    <div class="space-y-4 mb-10">
+        <div class="glass-card p-4 flex items-center border-l-4 border-l-purple-500">
+            <span class="text-2xl mr-4">🌐</span>
+            <div>
+                <h3 class="font-bold">Website Development</h3>
+                <p class="text-xs text-gray-400">Modern & responsive websites</p>
+            </div>
+        </div>
+
+        <div class="glass-card neon-border p-4 flex items-center bg-gradient-to-r from-purple-900/20 to-transparent">
+            <span class="text-2xl mr-4">💻</span>
+            <div>
+                <h3 class="font-bold">Coding Projects</h3>
+                <p class="text-xs text-gray-400">Custom software solutions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card p-6 text-center">
+        <h3 class="text-gray-400 mb-4 uppercase text-sm tracking-widest">Connect With Me</h3>
+        <a href="#" class="block w-full bg-[#121212] border border-gray-700 p-3 rounded-xl mb-3 hover:border-purple-500 transition">
+            Instagram: @your.id
+        </a>
+        <a href="#" class="block w-full bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-xl font-bold">
+            View Portfolio
+        </a>
+    </div>
+
+</body>
+  </html>
