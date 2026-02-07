@@ -30,6 +30,7 @@
             opacity: 0.5;
         }
 
+        /* Neon Glows */
         .glow-text-cyan { text-shadow: 0 0 15px var(--neon-cyan), 0 0 30px var(--neon-cyan); }
         .glow-text-purple { text-shadow: 0 0 15px var(--neon-purple), 0 0 30px var(--neon-purple); }
         
@@ -39,6 +40,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
+        /* Button & Card Animations */
         .btn-click:active { transform: scale(0.96); }
         .card-hover:hover {
             transform: translateY(-5px);
@@ -46,32 +48,20 @@
             box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
         }
 
-        .ios-emoji { width: 22px; height: 22px; display: inline-block; vertical-align: middle; }
-
-        #music-toggle.playing {
-            box-shadow: 0 0 15px var(--neon-purple);
-            border-color: var(--neon-purple);
-        }
+        .ios-emoji { width: 22px; height: 22px; display: inline-block; }
     </style>
 </head>
 <body class="max-w-md mx-auto pb-24">
 
     <div class="bg-animate"></div>
 
-    <audio id="bgMusic" loop preload="auto">
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
-    <div class="flex justify-between items-center p-4">
-        <button id="music-toggle" class="glass p-2 rounded-full border-gray-600 btn-click">
-            <img src="https://fonts.gstatic.com/s/i/short-term/release/googlestylesheet/volume_up/default/24px.svg" class="ios-emoji" style="filter: invert(1);">
-        </button>
+    <div class="flex justify-end p-4">
         <button class="glass px-4 py-1.5 rounded-lg text-sm border-cyan-500/30 text-cyan-400 btn-click">👤 Admin Login</button>
     </div>
 
     <section class="px-6 flex flex-col items-center text-center mt-4 mb-16">
         <div class="w-32 h-32 rounded-full border-[3px] border-cyan-400 p-1 mb-6 shadow-[0_0_30px_rgba(34,211,238,0.6)]">
-            <img src="dp.jpg" class="w-full h-full object-cover rounded-full bg-gray-900" alt="PROXY" onerror="this.src='https://via.placeholder.com/150/000000/FFFFFF?text=PROXY'">
+            <img src="dp.jpg" class="w-full h-full object-cover rounded-full bg-gray-900" alt="PROXY">
         </div>
         
         <h1 class="text-6xl font-bold orbitron tracking-tighter text-cyan-400 glow-text-cyan mb-2">PROXY</h1>
@@ -83,19 +73,79 @@
         <h3 class="text-gray-500 tracking-[0.3em] font-bold mb-6 uppercase text-[10px]">Skills & Expertise</h3>
         <div class="grid grid-cols-2 gap-3 w-full">
             <div class="glass p-3 rounded-xl border-b-2 border-cyan-500 flex items-center justify-center gap-2 card-hover">
-                <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Laptop/Flat/laptop_flat.png" class="ios-emoji"> Coding
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" class="ios-emoji"> Coding
             </div>
             <div class="glass p-3 rounded-xl border-b-2 border-red-500 flex items-center justify-center gap-2 card-hover">
-                <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Person%20lifting%20weights/Default/Flat/person_lifting_weights_flat.png" class="ios-emoji"> Gym
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20activities/Person%20Lifting%20Weights.png" class="ios-emoji"> Gym
             </div>
             <div class="glass p-3 rounded-xl border-b-2 border-purple-500 flex items-center justify-center gap-2 card-hover">
-                <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Robot/Flat/robot_flat.png" class="ios-emoji"> AI
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" class="ios-emoji"> AI
             </div>
             <div class="glass p-3 rounded-xl border-b-2 border-green-500 flex items-center justify-center gap-2 card-hover">
-                <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Shield/Flat/shield_flat.png" class="ios-emoji"> Hacking
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" class="ios-emoji"> Hacking
             </div>
         </div>
 
         <div class="w-full mt-12 space-y-4 text-left">
             <h3 class="text-gray-500 tracking-[0.3em] font-bold text-center uppercase text-[10px]">Connect With Me</h3>
-            <a href="https://instagram.com/proxyfxc" target="_blank" class="block glass p-4 rounded-2xl flex justify-between border-pink-500/20 card-hover btn-
+            <a href="https://instagram.com/proxyfxc" target="_blank" class="block glass p-4 rounded-2xl flex justify-between border-pink-500/20 card-hover btn-click">
+                <span class="flex items-center gap-2 font-bold"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera.png" class="ios-emoji"> Instagram</span>
+                <span class="text-gray-400">@proxyfxc</span>
+            </a>
+            <a href="https://t.me/Proxyfxz" target="_blank" class="block glass p-4 rounded-2xl flex justify-between border-blue-500/20 card-hover btn-click">
+                <span class="flex items-center gap-2 font-bold"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" class="ios-emoji"> Telegram</span>
+                <span class="text-gray-400">@Proxyfxz</span>
+            </a>
+            <a href="https://t.me/Proxyfxz" class="block w-full bg-gradient-to-r from-cyan-500 to-blue-600 p-4 rounded-2xl text-center font-bold orbitron mt-4 shadow-lg shadow-cyan-500/20 btn-click">CONTACT PROXY</a>
+        </div>
+    </section>
+
+    <section class="px-6 mb-20">
+        <h2 class="text-4xl font-bold orbitron text-center mb-2 text-purple-400 glow-text-purple">SERVICES</h2>
+        <p class="text-center text-gray-500 text-[10px] mb-8 tracking-[0.4em]">PREMIUM • PROFESSIONAL • SECURE</p>
+        
+        <div class="space-y-4">
+            <div class="glass p-5 rounded-2xl flex items-center gap-4 card-hover">
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" class="w-10 h-10">
+                <div><h4 class="font-bold">Instagram Ban/Unban</h4><p class="text-xs text-gray-500">Professional recovery service</p></div>
+            </div>
+            <div class="glass p-5 rounded-2xl border-2 border-cyan-500/40 bg-gradient-to-r from-cyan-900/10 to-transparent card-hover">
+                <div class="flex items-center gap-4 mb-2">
+                    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Globe%20with%20Meridians.png" class="w-10 h-10">
+                    <h4 class="font-bold text-xl text-cyan-400">Website Development</h4>
+                </div>
+                <p class="text-xs text-gray-400">Modern & high-performance websites</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6">
+        <h2 class="text-4xl font-bold orbitron text-center mb-2 text-blue-400 glow-text-cyan italic">MY BOTS</h2>
+        <div class="text-center mb-10"><span class="bg-gray-900 px-4 py-1 rounded-full text-[10px] text-gray-400 border border-gray-800 tracking-widest">👥 42k+ ACTIVE USERS</span></div>
+
+        <div class="space-y-6">
+            <a href="https://t.me/sparkpr3m1um_bot" target="_blank" class="block glass p-6 rounded-[2rem] border-2 border-purple-500/30 relative card-hover btn-click">
+                <div class="absolute -top-3 right-6 bg-white text-black px-3 py-1 rounded-full text-[10px] font-black uppercase">Popular</div>
+                <div class="flex items-center gap-3 mb-2">
+                    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" class="w-8 h-8">
+                    <h4 class="font-bold text-lg orbitron">@sparkpr3m1um_bot</h4>
+                </div>
+                <p class="text-sm text-gray-400">Premium methods & tutorials</p>
+            </a>
+
+            <a href="https://t.me/hyperbanning_bot" target="_blank" class="block glass p-6 rounded-[2rem] card-hover btn-click">
+                <div class="flex justify-between items-center mb-2">
+                    <h4 class="font-bold orbitron text-red-400">@hyperbanning_bot</h4>
+                </div>
+                <p class="text-sm text-gray-400">Professional banning tools</p>
+            </a>
+
+            <a href="https://t.me/Comfuker_bot" target="_blank" class="block glass p-6 rounded-[2rem] card-hover btn-click">
+                <h4 class="font-bold orbitron mb-1">@Comfuker_bot</h4>
+                <p class="text-sm text-gray-500">Exclusive tips & tricks</p>
+            </a>
+        </div>
+    </section>
+
+</body>
+    </html>
